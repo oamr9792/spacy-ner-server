@@ -3,3 +3,4 @@ fastapi==0.68.1
 uvicorn==0.15.0
 spacy==3.5.0
 python-multipart==0.0.5
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.5.0/en_core_web_sm-3.5.0-py3-none-any.whl
