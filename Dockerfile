@@ -9,4 +9,5 @@ RUN python -m spacy download en_core_web_sm
 
 COPY ./main.py /code/
 
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]
+# Railway injects PORT, so we need to use that
+CMD uvicorn main:app --host 0.0.0.0 --port $PORT
